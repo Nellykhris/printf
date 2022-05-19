@@ -7,16 +7,16 @@
 
 /**
  * struct flags - struct containing flags that will turn on
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- * @hash: flag for the '#' character
+ * @cee: flag for the 'c' character
+ * @es: flag for the 's' character
+ * @percent: flag for the '%' character
  */
 
 typedef struct flags
 {
-	int plus;
-	int space;
-	int hash;
+	int cee;
+	int es;
+	int percent;
 } flags_t;
 
 /**
