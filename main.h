@@ -31,6 +31,9 @@ typedef struct printHandler
 } ph
 
 /* print_nums*/
+int print_int
+
+=======
 int print_int(va_list 1, flags_t *f);
 void print_number(int n);
 int print_unsigned(va_list 1, flags_t *f);
