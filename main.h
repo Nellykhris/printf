@@ -5,9 +5,9 @@
 #include <stdarg.h>
 
 /**
- * struct flag - struct containing flags to "turn on"
- * when a flag spacifier is passed to printf()
- * @plus:flag fot the "+" character
+ * struct flags - struct containing flags to "turn on"
+ * when a flag specifier is passed to _printf()
+ * @plus: flag for the "+" character
  * @space: flag for the ' ' character
  * @hash: for the "#" character
  */
@@ -19,10 +19,10 @@ typedef struct flags
 } flags_t
 
 /**
- * struct print Handler -struct to choose the right function depending
- * on the format specifier passed tp printf()
+ * struct printHandler - struct to choose the right function depending
+ * on the format specifier passed to _printf()
  * @c: format specifier
- * @f:pointer to the correct primary function
+ * @f: pointer to the correct printing function
  */
 typedef struct printHandler
 {
