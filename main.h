@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -32,3 +33,6 @@ typedef struct printHandler
 
 /* print_nums*/
 int print_int
+=======
+:
+>>>>>>> 7cdc8cbe14bb2bec8ade68dc1e45f25328ec0fe9
