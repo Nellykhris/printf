@@ -24,4 +24,23 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (p = format; *p; p++)
 	{
-		p++
+		p++;
+			if(*p == '%')
+			{
+				count += _putchar('%');
+				continue;
+			}
+		while (get_flag(*p. &flags))
+			p++;
+		pfunc = get_print(*p);
+		count += (pfunc)
+			? pfunc(arguements, &flags)
+			: _printf("%%%c", *p);
+	}
+	else
+		count += _putchar(*p);
+}
+_putchar(-1);
+va_end(arguements);
+return (count);
+}
