@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 
 /**
  * _printf - produces output according to a format
@@ -26,13 +27,15 @@ int _printf(const char *format, ...)
 	return (-1);
 	for (p = format; *p; p++)
 {
+	if (*p =='%')
+{
 	p++;
 	if (*p == '%')
 {
 	count += _putchar('%');
 	continue;
 }
-	while (get_flag(*p. & flags))
+	while (get_flag(*p, &flags))
 	p++;
 	pfunc = get_print(*p);
 	count += (pfunc)
