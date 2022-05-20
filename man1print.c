@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 
 /**
  * _printf - produces output according to a format
@@ -23,6 +24,24 @@ int _printf(const char *format, ...)
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
 	for (p = format; *p; p++)
+<<<<<<< HEAD
+{
+	if (*p =='%')
+{
+	p++;
+	if (*p == '%')
+{
+	count += _putchar('%');
+	continue;
+}
+	while (get_flag(*p, &flags))
+	p++;
+	pfunc = get_print(*p);
+	count += (pfunc)
+	? pfunc(arguements, &flags)
+	: _printf("%%%c", *p);
+}
+=======
 	{
 		p++;
 			if(*p == '%')
@@ -37,6 +56,7 @@ int _printf(const char *format, ...)
 			? pfunc(arguements, &flags)
 			: _printf("%%%c", *p);
 	}
+>>>>>>> f712caaf4ebcc987457f0d21012653f30601500f
 	else
 		count += _putchar(*p);
 }
