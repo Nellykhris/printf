@@ -5,11 +5,11 @@
 #include <stdarg.h>
 
 /**
- * struct flags - struct containing flags to "turn on"
+ * struct flags - struct containing flags to turn on
  * when a flag specifier is passed to _printf()
- * @plus: flag for the "+" character
+ * @plus: flag for the + character
  * @space: flag for the ' ' character
- * @hash: for the "#" character
+ * @hash: for the # character
  */
 typedef struct flags
 {
@@ -31,9 +31,7 @@ typedef struct printHandler
 } ph
 
 /* print_nums*/
-int print_int
-
-=======
+int print_int(va_list 1, flags_t *f);
 int print_int(va_list 1, flags_t *f);
 void print_number(int n);
 int print_unsigned(va_list 1, flags_t *f);
