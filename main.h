@@ -46,7 +46,7 @@ typedef struct printHandler
 /* converter */
 	char *convert(unsigned long int num, int base, int lowercase);
 
-/* _printf */
+/* _man1print */
 	int _printf(const char *format, ...);
 
 /* get_print */

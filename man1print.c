@@ -18,15 +18,19 @@ int _printf(const char *format, ...)
 	register int count = 0;
 
 	va_start(arguements, format);
+<<<<<<< HEAD
 	if(!format || (format[0] == '%' && !format[1]))
 		return (-1);
 
+=======
+	if (!format || (format[0] == '%' && !format[1]))
+	return (-1);
+>>>>>>> ed48aa1b08048fd70b6b2ad433c57be6cbb6156d
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
 	for (p = format; *p; p++)
-<<<<<<< HEAD
 {
-	if (*p =='%')
+	if (*p == '%')
 {
 	p++;
 	if (*p == '%')
@@ -41,6 +45,7 @@ int _printf(const char *format, ...)
 	? pfunc(arguements, &flags)
 	: _printf("%%%c", *p);
 }
+<<<<<<< HEAD
 =======
 	{
 		p++;
@@ -57,6 +62,9 @@ int _printf(const char *format, ...)
 			: _printf("%%%c", *p);
 	}
 >>>>>>> f712caaf4ebcc987457f0d21012653f30601500f
+=======
+
+>>>>>>> ed48aa1b08048fd70b6b2ad433c57be6cbb6156d
 	else
 		count += _putchar(*p);
 }
@@ -64,3 +72,4 @@ _putchar(-1);
 va_end(arguements);
 return (count);
 }
+
