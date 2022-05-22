@@ -44,7 +44,7 @@ typedef struct printHandler
 	int print_octal(va_list l, flags_t *f);
 
 /* converter */
-	char *convert(unsigned long int num, int base, int lowercase);
+	char *printc(unsigned long int num, int base, int lowercase);
 
 /* _printf */
 	int _printf(const char *format, ...);
