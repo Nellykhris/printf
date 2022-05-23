@@ -3,7 +3,7 @@ pril 2022" "ALX SOFTWARE ENGINEERING" "_PRINTF"
 .B _printf
 - formatted output conversion
 .SH SYNOPSIS
-.B #include \(dqholberton.h\(dq
+.B #include \(main.h\(dq
 .sp
 .B int _printf(const char *
 .I format
